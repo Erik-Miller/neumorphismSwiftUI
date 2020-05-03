@@ -13,8 +13,8 @@ extension Color{
     
     
     
-    static let darkStart = Color(red: 50/255, green: 60/255, blue: 65/255)
-    static let darkEnd = Color(red: 25/255, green: 25/255, blue: 30/255)
+    static let darkStart = Color(red: 255/255, green: 255/255, blue: 255/255)
+    static let darkEnd = Color(red: 150/255, green: 150/255, blue: 155/255)
     
     
     static let lightStart = Color(red: 253/255, green: 75/255, blue: 155/255)
@@ -188,14 +188,14 @@ struct ContentView: View {
                 })
                 {
                     Image(systemName: "heart.fill")
-                        .foregroundColor(.white)
+                        .foregroundColor(.black)
                 }
                 .buttonStyle(DarkButtonStyle())
                 
                 
                 Toggle(isOn: $isToggled){
                     Image(systemName: "heart.fill")
-                        .foregroundColor(Color.white)
+                        .foregroundColor(Color.black)
                 }
                 .toggleStyle(DarkToggleStyle())
                 
@@ -206,14 +206,14 @@ struct ContentView: View {
                 })
                 {
                     Image(systemName: "heart.fill")
-                        .foregroundColor(.white)
+                        .foregroundColor(.black)
                 }
                 .buttonStyle(ColorfulButtonStyle())
                 
                 
                 Toggle(isOn: $lightIsToggled){
                     Image(systemName: "heart.fill")
-                        .foregroundColor(Color.white)
+                        .foregroundColor(Color.black)
                 }
                 .toggleStyle(ColorfulToggleStyle())
             
